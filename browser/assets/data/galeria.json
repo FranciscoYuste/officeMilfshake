@@ -1,0 +1,41 @@
+{
+    "entrada-principal": [
+      { "antes": "assets/entrada/Entrada1.png", "despues": "assets/entrada/Entrada1R.png" },
+      { "antes": "assets/entrada/Entrada2.png", "despues": "assets/entrada/Entrada2R.png" },
+      { "antes": "assets/entrada/Entrada3.png", "despues": "assets/entrada/Entrada3R.png" },
+      { "antes": "assets/entrada/Entrada4.png", "despues": "assets/entrada/Entrada4R.png" },
+      { "antes": "assets/entrada/Entrada5.png", "despues": "assets/entrada/Entrada5R.png" },
+      { "antes": "assets/entrada/Entrada5z.png", "despues": "assets/entrada/Entrada5zR.png" },
+      { "antes": "assets/entrada/Entrada6.png", "despues": "assets/entrada/Entrada6R.png" },
+      { "antes": "assets/entrada/Entrada7.png", "despues": "assets/entrada/Entrada7R.png" },
+      { "antes": "assets/entrada/Entrada8.png", "despues": "assets/entrada/Entrada8R.png" },
+      { "antes": "assets/entrada/Entrada9.png", "despues": "assets/entrada/Entrada9R.png" },
+      { "antes": "assets/entrada/Entrada10.png", "despues": "assets/entrada/Entrada10R.png" },
+      { "antes": "assets/entrada/Entrada11.png", "despues": "assets/entrada/Entrada11R.png" }
+    ],
+    "cafeteria": [
+      { "antes": "assets/cafeteria/Cafeteria1.png", "despues": "assets/cafeteria/Cafeteria1R.png" },
+      { "antes": "assets/cafeteria/Cafeteria2.png", "despues": "assets/cafeteria/Cafeteria2R.png" }
+    ],
+    "oficinas-superiores": [
+      { "antes": "assets/oficinas/Oficinas1.png", "despues": "assets/oficinas/Oficinas1R.png" },
+      { "antes": "assets/oficinas/Oficinas2.png", "despues": "assets/oficinas/Oficinas2R.png" },
+      { "antes": "assets/oficinas/Oficinas3.png", "despues": "assets/oficinas/Oficinas3R.png" },
+      { "antes": "assets/oficinas/Oficinas4.png", "despues": "assets/oficinas/Oficinas4R.png" },
+      { "antes": "assets/oficinas/Oficinas5.png", "despues": "assets/oficinas/Oficinas5R.png" },
+      { "antes": "assets/oficinas/Oficinas6.png", "despues": "assets/oficinas/Oficinas6R.png" },
+      { "antes": "assets/oficinas/Oficinas7.png", "despues": "assets/oficinas/Oficinas7R.png" }
+    ],
+    "sala-reuniones": [
+      { "antes": "assets/reunion/Reunion1.png", "despues": "assets/reunion/Reunion1R.png" },
+      { "antes": "assets/reunion/Reunion2.png", "despues": "assets/reunion/Reunion2R.png" },
+      { "antes": "assets/reunion/Reunion3.png", "despues": "assets/reunion/Reunion3R.png" },
+      { "antes": "assets/reunion/Reunion4.png", "despues": "assets/reunion/Reunion4R.png" },
+      { "antes": "assets/reunion/Reunion5.png", "despues": "assets/reunion/Reunion5R.png" }
+    ],
+    "general": [
+      { "antes": "assets/general/General1.png", "despues": "assets/general/General1R.png" },
+      { "antes": "assets/general/General2.png", "despues": "assets/general/General2R.png" }
+    ]
+  }
+  
