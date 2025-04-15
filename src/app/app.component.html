@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <header class="bg-gradient-to-r from-black to-gray-900 text-white py-6 shadow-lg">
   <h1 class="text-3xl font-bold text-center tracking-wide uppercase">Proyecto Oficinas Milfshakes</h1>
 
@@ -13,11 +14,58 @@
       routerLink="/cafeteria"
       routerLinkActive="bg-white text-black"
       class="px-4 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black transition-all duration-200"
+=======
+
+<!-- HEADER estilo Milfshakes -->
+<header class="bg-[#e50012] text-white py-6 text-center">
+  <h1 class="text-4xl font-black uppercase tracking-widest">Proyecto Oficinas Milfshakes</h1>
+  <!-- VIDEO INTRO con botón de sonido -->
+  <div class="relative max-w-4xl mx-auto mt-6">
+    <video
+      #videoPlayer
+      class="w-full max-h-[500px] object-cover rounded-xl shadow-lg"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster="assets/Entrada/Entrada5zR.jpg"
+    >
+      <source src="assets/videos/VideoOficinaMilfshakeCompres.mp4" type="video/mp4" />
+      Tu navegador no soporta videos HTML5.
+    </video>
+
+    <!-- BOTÓN DE SONIDO -->
+    <button
+      (click)="toggleMute()"
+      class="absolute bottom-4 right-4 bg-white text-black p-2 rounded-full shadow hover:scale-110 transition"
+    >
+      <span *ngIf="!videoMuted; else muted">🔊</span>
+      <ng-template #muted>🔇</ng-template>
+    </button>
+  </div>
+  <img src="assets/logo2.png" width="100" alt="Logo prueba" class="mx-auto my-4" />
+
+  <!-- Navegación estilo pastDrops -->
+  <nav class="flex flex-wrap justify-center gap-4 mt-8 px-4">
+    <a
+      routerLink="/entrada-principal"
+      routerLinkActive="border-2 border-white bg-white/50"
+      class="px-5 py-2 rounded-full border border-white text-white uppercase font-semibold hover:bg-white hover:text-[#e50012] transition"
+    >
+      Entrada
+    </a>
+    <a
+      routerLink="/cafeteria"
+      routerLinkActive="border-2 border-white bg-white/50"
+      class="px-5 py-2 rounded-full border border-white text-white uppercase font-semibold hover:bg-white hover:text-[#e50012] transition"
+>>>>>>> f33e696 (1er Commit - proyecto oficina Milfshakes)
     >
       Cafetería
     </a>
     <a
       routerLink="/oficinas-superiores"
+<<<<<<< HEAD
       routerLinkActive="bg-white text-black"
       class="px-4 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black transition-all duration-200"
     >
@@ -34,12 +82,35 @@
       routerLink="/general"
       routerLinkActive="bg-white text-black"
       class="px-4 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black transition-all duration-200"
+=======
+      routerLinkActive="border-2 border-white bg-white/50"
+      class="px-5 py-2 rounded-full border border-white text-white uppercase font-semibold hover:bg-white hover:text-[#e50012] transition"
+    >
+      Oficinas
+    </a>
+    <a
+      routerLink="/sala-reuniones"
+      routerLinkActive="border-2 border-white bg-white/50"
+      class="px-5 py-2 rounded-full border border-white text-white uppercase font-semibold hover:bg-white hover:text-[#e50012] transition"
+    >
+      Reuniones
+    </a>
+    <a
+      routerLink="/general"
+      routerLinkActive="border-2 border-white bg-white/50"
+      class="px-5 py-2 rounded-full border border-white text-white uppercase font-semibold hover:bg-white hover:text-[#e50012] transition"
+>>>>>>> f33e696 (1er Commit - proyecto oficina Milfshakes)
     >
       General
     </a>
   </nav>
 </header>
+<<<<<<< HEAD
 
 <main class="p-6 min-h-[80vh] bg-gray-50">
+=======
+<!-- MAIN -->
+<main class="bg-[#e50012] min-h-[80vh] text-white">
+>>>>>>> f33e696 (1er Commit - proyecto oficina Milfshakes)
   <router-outlet></router-outlet>
 </main>

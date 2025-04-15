@@ -87,6 +87,12 @@
             ],
             "scripts": []
           }
+<<<<<<< HEAD
+=======
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
+>>>>>>> f33e696 (1er Commit - proyecto oficina Milfshakes)
         }
       }
     }

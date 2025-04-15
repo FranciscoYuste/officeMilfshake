@@ -27,6 +27,10 @@
     "@angular/cli": "^18.2.10",
     "@angular/compiler-cli": "^18.2.0",
     "@types/jasmine": "~5.1.0",
+<<<<<<< HEAD
+=======
+    "angular-cli-ghpages": "^2.0.3",
+>>>>>>> f33e696 (1er Commit - proyecto oficina Milfshakes)
     "autoprefixer": "^10.4.21",
     "jasmine-core": "~5.2.0",
     "karma": "~6.4.0",

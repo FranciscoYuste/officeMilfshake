@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2 class="text-xl font-bold text-center my-4 capitalize">
   {{ seccion.replace('-', ' ') }}
 </h2>
@@ -14,4 +15,68 @@
     class="w-full h-60 object-cover rounded-xl shadow-md transition duration-300 hover:scale-105"
   />
   </div>
+=======
+<!-- Título -->
+<h2 class="text-2xl font-bold text-center uppercase tracking-wide mt-10">
+  {{ seccion.replace('-', ' ') }}
+</h2>
+
+<!-- Galería con fusión para grupos de 3 -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-8xl mx-auto p-8">
+  <ng-container *ngFor="let imagen of imagenes.slice(0, imagenes.length - imagenes.length % 3); let i = index">
+    <div
+      class="relative w-full max-w-[600px] h-72 mx-auto rounded-xl overflow-hidden shadow-xl cursor-pointer group"
+      (click)="alternarImagen(i)"
+    >
+      <!-- Imagen ANTES -->
+      <img
+        [src]="imagen.antes"
+        alt="imagen antes"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+        [class.opacity-100]="imagen.mostrandoAntes"
+        [class.opacity-0]="!imagen.mostrandoAntes"
+      />
+
+      <!-- Imagen DESPUÉS -->
+      <img
+        [src]="imagen.despues"
+        alt="imagen después"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+        [class.opacity-100]="!imagen.mostrandoAntes"
+        [class.opacity-0]="imagen.mostrandoAntes"
+      />
+    </div>
+  </ng-container>
+</div>
+
+<!-- Última fila centrada -->
+<div
+  class="flex justify-center gap-8 max-w-6xl mx-auto pb-8"
+  *ngIf="imagenes.length % 3 !== 0"
+>
+  <ng-container *ngFor="let imagen of imagenes.slice(imagenes.length - imagenes.length % 3)">
+    <div
+      class="relative w-full max-w-[600px] h-72 mx-auto rounded-xl overflow-hidden shadow-xl cursor-pointer group"
+      (click)="alternarImagen(imagenes.indexOf(imagen))"
+    >
+      <!-- Imagen ANTES -->
+      <img
+        [src]="imagen.antes"
+        alt="imagen antes"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+        [class.opacity-100]="imagen.mostrandoAntes"
+        [class.opacity-0]="!imagen.mostrandoAntes"
+      />
+
+      <!-- Imagen DESPUÉS -->
+      <img
+        [src]="imagen.despues"
+        alt="imagen después"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+        [class.opacity-100]="!imagen.mostrandoAntes"
+        [class.opacity-0]="imagen.mostrandoAntes"
+      />
+    </div>
+  </ng-container>
+>>>>>>> f33e696 (1er Commit - proyecto oficina Milfshakes)
 </div>
