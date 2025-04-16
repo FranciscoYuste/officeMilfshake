@@ -1,23 +1,10 @@
-<<<<<<< HEAD
-import { Component } from '@angular/core';
-import { RouterOutlet, RouterModule } from '@angular/router';
-=======
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { RouterOutlet, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
->>>>>>> f33e696 (1er Commit - proyecto oficina Milfshakes)
 
 @Component({
   selector: 'app-root',
   standalone: true,
-<<<<<<< HEAD
-  imports: [RouterOutlet, RouterModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
-})
-export class AppComponent {
-  title = 'Proyecto Oficinas Milfshakes';
-=======
   imports: [RouterOutlet, RouterModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -55,5 +42,4 @@ export class AppComponent implements AfterViewInit {
     this.videoMuted = !this.videoMuted;
     video.muted = this.videoMuted;
   }
->>>>>>> f33e696 (1er Commit - proyecto oficina Milfshakes)
 }

@@ -1,24 +1,15 @@
-<<<<<<< HEAD
-<header class="bg-gradient-to-r from-black to-gray-900 text-white py-6 shadow-lg">
-  <h1 class="text-3xl font-bold text-center tracking-wide uppercase">Proyecto Oficinas Milfshakes</h1>
-
-  <nav class="flex flex-wrap justify-center gap-3 mt-6 px-4 text-sm">
-    <a
-      routerLink="/entrada-principal"
-      routerLinkActive="bg-white text-black"
-      class="px-4 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black transition-all duration-200"
-    >
-      Entrada Principal
-    </a>
-    <a
-      routerLink="/cafeteria"
-      routerLinkActive="bg-white text-black"
-      class="px-4 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black transition-all duration-200"
-=======
 
 <!-- HEADER estilo Milfshakes -->
 <header class="bg-[#e50012] text-white py-6 text-center">
-  <h1 class="text-4xl font-black uppercase tracking-widest">Proyecto Oficinas Milfshakes</h1>
+  <div class="inline-block text-left">
+    <h1 class="text-5xl md:text-6xl font-extrabold tracking-wider uppercase text-white drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)] font-chicle">
+      Proyecto Oficinas Milfshakes
+    </h1>
+  
+    <p class="text-white text-sm md:text-base font-light italic opacity-80 tracking-widest text-right">
+      By Fran
+    </p>
+  </div>
   <!-- VIDEO INTRO con botón de sonido -->
   <div class="relative max-w-4xl mx-auto mt-6">
     <video
@@ -59,30 +50,11 @@
       routerLink="/cafeteria"
       routerLinkActive="border-2 border-white bg-white/50"
       class="px-5 py-2 rounded-full border border-white text-white uppercase font-semibold hover:bg-white hover:text-[#e50012] transition"
->>>>>>> f33e696 (1er Commit - proyecto oficina Milfshakes)
     >
       Cafetería
     </a>
     <a
       routerLink="/oficinas-superiores"
-<<<<<<< HEAD
-      routerLinkActive="bg-white text-black"
-      class="px-4 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black transition-all duration-200"
-    >
-      Oficinas Superiores
-    </a>
-    <a
-      routerLink="/sala-reuniones"
-      routerLinkActive="bg-white text-black"
-      class="px-4 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black transition-all duration-200"
-    >
-      Sala de Reuniones
-    </a>
-    <a
-      routerLink="/general"
-      routerLinkActive="bg-white text-black"
-      class="px-4 py-2 rounded-full border border-white text-white hover:bg-white hover:text-black transition-all duration-200"
-=======
       routerLinkActive="border-2 border-white bg-white/50"
       class="px-5 py-2 rounded-full border border-white text-white uppercase font-semibold hover:bg-white hover:text-[#e50012] transition"
     >
@@ -99,18 +71,33 @@
       routerLink="/general"
       routerLinkActive="border-2 border-white bg-white/50"
       class="px-5 py-2 rounded-full border border-white text-white uppercase font-semibold hover:bg-white hover:text-[#e50012] transition"
->>>>>>> f33e696 (1er Commit - proyecto oficina Milfshakes)
     >
       General
     </a>
   </nav>
 </header>
-<<<<<<< HEAD
-
-<main class="p-6 min-h-[80vh] bg-gray-50">
-=======
 <!-- MAIN -->
 <main class="bg-[#e50012] min-h-[80vh] text-white">
->>>>>>> f33e696 (1er Commit - proyecto oficina Milfshakes)
   <router-outlet></router-outlet>
 </main>
+
+<footer class="bg-[#1a1a1a] text-white py-10 px-6 mt-16">
+  <div class="max-w-4xl mx-auto text-center space-y-4">
+    <p class="text-lg font-light leading-relaxed">
+      Gracias ver mi modelo 3D. <br />
+      Cada detalle fue creado con mucho cariño y ganas.
+    </p>
+
+    <p class="text-base font-light italic opacity-80">
+      – Fran
+    </p>
+
+    <a
+      href="assets/CV_FRAN.pdf"
+      target="_blank"
+      class="inline-block mt-4 text-sm uppercase font-semibold text-[#e50012] border border-[#e50012] px-5 py-2 rounded-full hover:bg-[#e50012] hover:text-white transition duration-300"
+    >
+      Ver Curriculum
+    </a>
+  </div>
+</footer>

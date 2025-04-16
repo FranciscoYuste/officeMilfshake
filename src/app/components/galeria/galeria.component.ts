@@ -7,8 +7,8 @@ interface ImagenComparativa {
   antes: string;
   despues: string;
   mostrandoAntes: boolean;
+  index: number; // nuevo campo para rastrear el índice original
 }
-
 @Component({
   selector: 'app-galeria',
   standalone: true,
@@ -34,11 +34,20 @@ export class GaleriaComponent implements OnInit {
 
   cargarImagenes(): void {
     const data = this.galeriaService.getImagenesPorSeccion(this.seccion);
-    this.imagenes = data.map(img => ({
+    this.imagenes = data.map((img, i) => ({
       antes: img.antes,
       despues: img.despues,
-      mostrandoAntes: true
+      mostrandoAntes: true,
+      index: i
     }));
+  }
+  
+  obtenerFilas(imagenes: ImagenComparativa[]): ImagenComparativa[][] {
+    const filas: ImagenComparativa[][] = [];
+    for (let i = 0; i < imagenes.length; i += 3) {
+      filas.push(imagenes.slice(i, i + 3));
+    }
+    return filas;
   }
 
   alternarImagen(index: number): void {

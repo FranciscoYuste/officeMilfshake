@@ -1,9 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
-<<<<<<< HEAD
-@tailwind utilities;
-=======
 @tailwind utilities;
 
 .bg-watermark {
@@ -12,4 +9,3 @@
     background-size: 100px;
     opacity: 0.04;
   }
->>>>>>> f33e696 (1er Commit - proyecto oficina Milfshakes)
